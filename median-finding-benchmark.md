@@ -1,5 +1,5 @@
-# output of java -jar target/benchmarks.jar -wi 5 -f 2
-``` text
+# Comparing Median Finding Algorithms
+```
 # JMH 1.12 (released 32 days ago)
 # VM version: JDK 1.8.0_74, VM 25.74-b02
 # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
@@ -18,7 +18,7 @@
 # Warmup Iteration   3: 847.195 ops/s
 # Warmup Iteration   4: 839.779 ops/s
 # Warmup Iteration   5: 926.781 ops/s
-```
+
 Iteration   1: 951.529 ops/s
 Iteration   2: 927.270 ops/s
 Iteration   3: 930.976 ops/s
@@ -113,7 +113,6 @@ Iteration  17: 444.870 ops/s
 Iteration  18: 440.694 ops/s
 Iteration  19: 426.344 ops/s
 Iteration  20: 432.179 ops/s
-
 # Run progress: 75.00% complete, ETA 00:00:25
 # Fork: 2 of 2
 # Warmup Iteration   1: 317.960 ops/s
@@ -141,16 +140,11 @@ Iteration  17: 450.452 ops/s
 Iteration  18: 456.023 ops/s
 Iteration  19: 452.614 ops/s
 Iteration  20: 456.654 ops/s
-
-
 Result "useSorting":
   444.896 ±(99.9%) 6.047 ops/s [Average]
   (min, avg, max) = (415.128, 444.896, 459.879), stdev = 10.748
   CI (99.9%): [438.849, 450.942] (assumes normal distribution)
-
-
 # Run complete. Total time: 00:01:42
-
 Benchmark                               Mode  Cnt    Score    Error  Units
 MedianFindingBenchmark.useQuickSelect  thrpt   40  905.665 ± 16.871  ops/s
 MedianFindingBenchmark.useSorting      thrpt   40  444.896 ±  6.047  ops/s
